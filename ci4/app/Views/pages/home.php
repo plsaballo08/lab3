@@ -81,7 +81,7 @@
                 </section>
 
                 <!-- Picture -->
-                <img class="imgRound" src="<? echo base_url('Images/pic.jpg" alt="Profile" height="500'); ?>">
+                <img class="imgRound" src="<?php echo base_url('Images/pic.jpg" alt="Profile" height="500'); ?>">
             </div>
         </div>
         <div class="quote" id="quote">
@@ -246,20 +246,20 @@
 
                 <div class="hyperlink">
                     <a href="https://github.com/plsaballo08" target="_blank">
-                        <img src="<? echo base_url('Images/github-logo.png" alt="Github" width="40" height="40'); ?>">
+                        <img src="<?php echo base_url('Images/github-logo.png" alt="Github" width="40" height="40'); ?>">
                     </a>
                 </div>
 
                 <div class="hyperlink">
                     <a href="https://www.facebook.com/saballo0805/" target="_blank">
-                        <img src="<? echo base_url('Images/fb.png" alt="Facebook" width="40" height="40'); ?>">
+                        <img src="<?php echo base_url('Images/fb.png" alt="Facebook" width="40" height="40'); ?>">
                     </a>
                 </div>
             </footer>
         </div>
 
         <button class="back-button" onclick="goBack()">
-            <img src="<? echo base_url('Images/up-button.png" alt="Back" width="30" height="30'); ?>">
+            <img src="<?php echo base_url('Images/up-button.png" alt="Back" width="30" height="30'); ?>">
         </button>
 
         <script>
