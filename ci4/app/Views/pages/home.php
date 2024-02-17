@@ -240,48 +240,7 @@
                         </div>
                     </form>
 
-                    <?php
-                    echo "<h2>Your Input:</h2>";
-                    echo "<br>";
-                    echo $email;
-                    echo "<br>";
-                    echo $comment;
-                    echo "<br>";
-                    echo "<br>";
-                    echo "<br>";
-
-
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "Feedback";
-
-
-                    $conn = new mysqli($servername, $username, $password, $dbname);
-
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                    }
-
-
-                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        $email = $_POST['email'];
-                        $comment = $_POST['comment'];
-
-                        $stmt = $conn->prepare("INSERT INTO feedback (Email, Comment) VALUES (?, ?)");
-                        $stmt->bind_param("ss", $email, $comment);
-
-                        if ($stmt->execute()) {
-                            echo "New record created successfully <br><br><br>";
-                        } else {
-                            echo "Error: " . $stmt->error;
-                        }
-
-                        $stmt->close();
-                    }
-
-                    $conn->close();
-                    ?>
+                
 
                 </div>
 
