@@ -55,7 +55,7 @@
 
 
                         <script>
-                        
+
 
                             document.getElementById("age").innerHTML = "<strong>" + 20 + "</strong>";
                         </script>
@@ -81,7 +81,7 @@
                 </section>
 
                 <!-- Picture -->
-                <img class="imgRound" src="<?php echo base_url('Images/pic.jpg" alt="Profile" height="500'); ?>">
+                <img class="imgRound" src="<?php echo base_url('Images/pic.jpg '); ?>" alt="Profile" height="500 ">
             </div>
         </div>
         <div class="quote" id="quote">
@@ -240,13 +240,14 @@
                         </div>
                     </form>
 
-                
+
 
                 </div>
 
                 <div class="hyperlink">
                     <a href="https://github.com/plsaballo08" target="_blank">
-                        <img src="<?php echo base_url('Images/github-logo.png" alt="Github" width="40" height="40'); ?>">
+                        <img
+                            src="<?php echo base_url('Images/github-logo.png" alt="Github" width="40" height="40'); ?>">
                     </a>
                 </div>
 
